@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lil Grillades - Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="Accueil" class="section-sticky">
+        <header>
+            <address id="en-tete">
+                <div class="adresse-info">
+                    <img src="./assets/localisation.png" alt="Icône de localisation" class="icone-localisation"><span>2 Rue Dalayrac, 31000 Toulouse</span></img>
+                </div>
+                <div class="adresse-info">
+                    <img id="icone-calendrier" src="./assets/calendrier.png" alt="Icône de localisation" class="icone-localisation"><span>Tous les jours de midi à 22h30</span></img>
+                </div>
+                <div  id="telephone" class="adresse-info">
+                    <img src="./assets/telephone.png" alt="Icône de localisation" class="icone-localisation"><span>06.46.44.32.64</span></img>
+                </div>
+            </address>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#Accueil">Accueil</a></li>
+                <li><a href="#Carte">Carte</a></li>
+                <li><a href="#A-propos">À propos</a></li>
+                <li><a href="#Avis">Avis</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Voyagez au Cœur de la Cuisine Orientale</h1>
+        <h2>Seul ou à plusieurs, découvrez nos spécialités et grillades sur pierre de lave</h2>
+        <a id="bouton-home" class="bouton-1" href="#Carte">Voir la carte</a>
+    </section>
+
+
+    <section id="Carte">
+        <h2 id="Titre-Carte">La carte</h2>
+
+        <!-- Menu grillades -->
+
+        <div class="zone-titre-description">        
+            <h3>Menu Grillades</h3>
+            <p class="description-type">Toutes nos grillades sont préparés le jour même avec des <span class="span-couleur">produits frais</span> et cuîtes sur <span class="span-couleur">pierre de lave</span>.</p>
+        </div>
+        <div class="zone-description-produit">
+            <div class="produit-card">
+                <h4>Menu Côte d'Agneau</h4>
+                <img src="./assets/images/entrecote.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Keftas</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Assiette 2 pièce steak haché  viande fraîche +frite maison +salade. Boisson sauce au choix</p>
+                <p class="prix-produit">20,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Grillades</h4>
+                <img src="./assets/images/Brochette3x.jpg" alt="Photographie produit">
+                <p class="description-produit">3 pièces de brochettes avec frites + salade + sauce au choix + une boisson au choix</p>
+                <p class="prix-produit">20,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Merguez</h4>
+                <img src="./assets/images/Merguez_grillades3.jpg" alt="Photographie produit">
+                <p class="description-produit">3 pièces.frites. Salades boissons sauce au choix</p>
+                <p class="prix-produit">20,50 €</p>
+            </div>
+        </div>
+
+        <!-- Menu sandwich-->
+
+        <div class="zone-titre-description">        
+            <h3>Menu Sandwich</h3>
+            <p class="description-type">Tous nos sandwich sont préparés le jour même avec des <span class="span-couleur">produits frais</span> et avec viande cuîtes sur <span class="span-couleur">pierre de lave</span>.</p>
+        </div>
+        <div class="zone-description-produit">
+            <div class="produit-card">
+                <h4>Menu Kefta</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Mergez</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Omelette frites</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Burger</h4>
+                <img src="./assets/images/MenuBurger.jpg" alt="Photographie produit">
+                <p class="description-produit">Steak, cheddar, salade, tomates, oignons, cornichons et frites. Boissons</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+        </div>
+
+        <!-- Nos entrées -->
+
+        <div class="zone-titre-description">        
+            <h3>Nos entrées</h3>
+            <p class="description-type">Toutes nos entrées sont préparés le jours même avec des produits frais.</p>
+        </div>
+        <div class="zone-description-entrees">
+            <div class="produit-card">
+                <h4>Salade composée</h4>
+                <img src="./assets/images/Salade-Composee.jpeg" alt="Photographie produit">
+                <p class="description-produit">Tenders, salade, tomates, oignons et maïs.</p>
+                <p class="prix-produit">11,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Salade Mechouia</h4>
+                <img src="./assets/images/Salade-Mechouia.jpeg" alt="Photographie produit">
+                <p class="description-produit">Poivrons, tomates et huile d'olive.</p>
+                <p class="prix-produit">10,00 €</p>
+            </div>
+        </div>
+
+        <!-- Nos plats -->
+
+        <div class="zone-titre-description">        
+            <h3>Nos plats</h3>
+            <p class="description-type">Tous nos plats sont préparés le jour même avec des <span class="span-couleur">produits frais</span> et viande cuîtes sur <span class="span-couleur">pierre de lave</span></p>
+            <p class="type-plat">Cuisine orientale</p>
+        </div>
+        <div class="zone-description-produit">
+            <div class="produit-card">
+                <h4>Tajine au poulet et olives</h4>
+                <img src="./assets/images/tajinepouletolive.jpeg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Couscous Agneau</h4>
+                <img src="./assets/images/Couscous-Agneau.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Tajine Kefta Oeufs</h4>
+                <img src="./assets/images/Tajine002.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Couscous Poulet</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Couscous Végétarien</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Couscous Royal</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+        </div>
+
+        <div class="zone-titre-description">        
+            <p class="type-plat">Restauration rapide</p>
+        </div>
+        <div class="zone-description-produit">
+            <div class="produit-card">
+                <h4>Menu Kefta</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Mergez</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Omelette frites</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Burger</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+        </div>
+
+        <!--Nos grillades -->
+
+        <div class="zone-titre-description">        
+            <h3>Nos grillades</h3>
+            <p class="description-type">Toutes nos grillades sont préparés le jour même avec des <span class="span-couleur">produits frais</span> et avec viande cuîtes sur <span class="span-couleur">pierre de lave</span>.</p>
+        </div>
+        <div class="zone-description-produit">
+            <div class="produit-card">
+                <h4>Menu Kefta</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Menu Mergez</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+            <div class="produit-card">
+                <h4>Omelette frites</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Côte d’agneau avec une portion de frites généreuse et sa sauce au choix + une salade maison + boisson au choix</p>
+                <p class="prix-produit">16,50 €</p>
+            </div>
+        </div>
+
+        <!-- Accompagnement et supplément -->
+
+        <div class="zone-titre-description">        
+            <h3>Accompagnement et supplément</h3>
+        </div>
+        <div class="zone-description-produit-small">
+            <div class="produit-card-small">
+                <h4>Barquette de frite maison</h4>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                <p class="description-produit">Nos frites sont préparées maison à partir de pommes de terre fraîches.</p>
+                <p class="prix-produit">4,50 €</p>
+            </div>
+            <div id="zone-description-produit-supplement">
+                <div class="produit-card-small-1">
+                    <h4>Kefta</h4>
+                    <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                    <p class="description-produit">Supplément x1</p>
+                    <p class="prix-produit">3,50 €</p>
+                </div>
+                <div class="produit-card-small-2">
+                    <h4>Mergez</h4>
+                    <img src="./assets/images/cotelette.jpg" alt="Photographie produit">
+                    <p class="description-produit">Supplément x1</p>
+                    <p class="prix-produit">3,00 €</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Boissons-->
+
+        <div class="zone-titre-description">        
+            <h3>Boissons</h3>
+        </div>
+        <div class="zone-description-produit-boissons">
+            <div class="zone-description-produit-boissons-1">
+                <div class="produit-card-boisson-1">
+                    <h4>Coca</h4>
+                    <img src="./assets/images/coca.jpeg" alt="Photographie produit">
+                    <p class="description-produit">33 Cl</p>
+                    <p class="prix-produit">2,50 €</p>
+                </div>
+                <div class="produit-card-boisson-2">
+                    <h4>Lipton</h4>
+                    <img src="./assets/images/Lipton.jpg" alt="Photographie produit">
+                    <p class="description-produit">33 Cl</p>
+                    <p class="prix-produit">2,50 €</p>
+                </div>
+            </div>
+            <div class="zone-description-produit-boissons-2">
+                <div class="produit-card-boisson-1">
+                    <h4>Fanta Orange</h4>
+                    <img src="./assets/images/fanta.jpeg" alt="Photographie produit">
+                    <p class="description-produit">33 Cl</p>
+                    <p class="prix-produit">2,50 €</p>
+                </div>
+                <div class="produit-card-boisson-2">
+                    <h4>Eau</h4>
+                    <img src="./assets/images/Eau.jpg" alt="Photographie produit">
+                    <p class="description-produit">50 Cl</p>
+                    <p class="prix-produit">2,00 €</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Section À propos -->
+
+    <section id="A-propos">
+        <h2>À propos</h2>
+        <div class="argument-1">
+            <div>
+                <img src="./assets/images/cotelette.jpg" alt="Photographie des produits de la cuisine de Lil Grillades">
+            </div>
+            <div class="div-paragraphe"> 
+                <p>Chez <span class="span-couleur">Lil Grillades</span> chaque détail compte. Nous sélectionnons avec soin nos ingrédients pour garantir une qualité et une fraîcheur incomparables. 
+
+                    Nous sommes fiers de vous offrir une expérience gastronomique unique, où chaque plat est préparé avec passion et respect des traditions ancestrales. </p>
+            </div>
+        </div>
+        <div class="argument-2">
+            <div class="div-paragraphe">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum ipsum voluptatum in amet officiis optio, possimus molestiae incidunt consequuntur debitis animi voluptatem hic expedita rerum impedit nemo dolor quia fuga!</p>
+            </div>
+            <div>
+                <img src="./assets/images/profil001.jpg" alt="Photographie de l'équipe de Lil Grillades">
+            </div>
+        </div>
+        <div class="argument-CTA">
+            <div>
+                <img src="./assets/images/cotelette.jpg" alt="#">
+            </div>
+
+            <div id="paragraphe-CTA">
+                <div class="div-paragraphe">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla voluptate qui laborum eos eum eius repellat odio, quam unde quasi aperiam maiores repudiandae esse molestias similique ipsam, autem odit beatae!</p>
+                </div>
+                <div id="div-CTA">
+                    <div>
+                        <p class="description-type">N'hésitez pas à nous contacter pour reserver votre table ou pour tout renseignement.</p>
+                    </div>
+                    <button id="CTA-reserver" class="bouton-1">Reserver</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Avis" >
+        <div id="Avis-container">
+            <h2 id="Avis-titre">Avis</h2>
+            <div class="Caroussel-Avis">
+                <button class="Bouton-Gauche-Avis">
+                    <img src="./assets/Polygon 1.svg" alt="Flèche de gauche">
+                </button>
+                <button class="Bouton-Droite-Avis">
+                    <img src="./assets/Polygon 2.svg" alt="Flèche de droite">
+                </button>
+                
+                    <div class="Note">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                    </div>
+                    <p class="Message-avis cabin-sketch-bold">J'ai passé un excellent moment dans ce restaurant de grillades ! Le sandwich merguez était délicieux, l'un des meilleurs que j'ai goûtés sur Toulouse. Le personnel était très accueillant et sympathique, et cerise sur le gâteau, ils nous ont même offert du thé gratuitement. Je recommande vivement cet endroit ! </p>
+                    <p class="Nom-avis">Walid Didi Omar, Visité en octobre 2024</p>
+                    <div class="Note active">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                    </div>
+                    <p class="Message-avis active cabin-sketch-bold">Restaurant convivial ! Les proprio sont très chaleureux et accueillants et ils veillent sur le confort du client ! Le monsieur m'a offert un verre de thé à mon arrivé ! C'était très gentil , merci ! </p>
+                    <p class="Nom-avis active">yesmine ammar, Visité en avril 2024</p>
+                    <div class="Note">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                        <img src="./assets/tajine 1.svg" alt="Tajine équivalent aux étoiles de notation">
+                    </div>
+                    <p class="Message-avis cabin-sketch-bold">Service au top très bon produit fait maison.
+                        Patron super sympa.
+                        A recommander sérieusement. </p>
+                    <p class="Nom-avis">Jonathan DEVENDEVILLE, visité en juillet 2024</p>
+                    <div class="indicateurs">
+                        <span class="indicateur"></span>
+                        <span class="indicateur active"></span>
+                        <span class="indicateur"></span>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+    
+    
+    
+    <section id="Contact">
+        <h2 id="titre-restaurant">Restaurant <span class="span-couleur">Lil Grillades </span></h2>
+        <div id="contact-elements">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2888.97902397718!2d1.4467560753883149!3d43.60697835542029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aebdbb61c8f243%3A0x97ea426e29111b12!2sLil%20Grillades!5e0!3m2!1sfr!2sfr!4v1729344463694!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>2 Rue Dalayrac, 31000 Toulouse</p>
+            </div>
+            <div id="Contact-liste">
+                <div class="Contact-informations">
+                    <p>Horaire</p>
+                    <p>Tous les jours de 12:00 à 22:30</p>
+                </div>
+                <div class="Contact-informations">
+                    <p>Contact</p>
+                    <p>06.48.44.32.64</p>
+                </div>
+                <div class="Contact-informations">
+                <p>Accès</p>
+                <p>Métro ligne A ou B stations Jean Jaures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

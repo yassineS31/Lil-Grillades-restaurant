@@ -1,0 +1,1058 @@
+/* Déclaration des variables avec affectation des couleurs + Reset de base */
+:root{
+    --Yellow:#FFDA6B;
+    --White:#FAFAFA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    max-width: 100%
+}
+
+.cabin-sketch-bold {
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+h1,h2{
+    font-family:Playfair Display, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--White);
+}
+
+h3{
+    font-family:Playfair Display, Arial, Helvetica, sans-serif;
+    color: var(--White);
+}
+
+h1{
+    font-weight: 700;
+    font-size: 2.4em;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+h4{
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--Yellow);
+}
+
+p{
+    color: var(--White);
+    font-family: "comic sans ms";
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    font-family:Playfair Display, Arial, Helvetica, sans-serif;
+    color: var(--White);
+}
+ul{
+    list-style: none;
+}
+
+.section-sticky{
+    position: sticky;
+    top: 0;
+    height: auto;
+}
+
+header{
+    width: 100%;
+}
+address{
+    display: flex;
+    align-items:center;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px black;
+    background-color: #292a2b21;
+    gap: 10px;
+    /* Taile des icônes*/
+    img{
+        width:35px ;
+        height:35px ;
+    }
+    /* Disposition des éléments enfants du parent .adresse-info*/
+    .adresse-info{
+        display: flex;
+        align-items: center;
+    }
+    /* Espacement entre l'icône et le texte (non présent de base)*/
+    #icone-calendrier{
+        margin-right: 5px;
+    }
+    /* Disposition de l'élément téléphone (icône + texte) à droite + Ajout d'un margin-right */
+    #telephone{
+        margin-left:auto ;
+        margin-right: 10px;
+    }
+}
+
+
+#Accueil{
+    background-image: url("./assets/images/bg-plat.webp");
+    background-color: rgba(0, 0, 0, 0.30); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1,h2{
+        color: var(--White);
+    }
+    h1{
+        margin-top: 80px;
+    }
+    h2{
+        margin-top: 20px;
+    }
+}
+
+nav{
+    width: 600px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.30);
+    box-shadow: 0 12px 32px 0 rgba(3, 4, 14, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 20px;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 4px 12px;
+}
+#bouton-home{
+    margin-bottom: 50px;
+}
+
+
+.bouton-1{
+    display: inline-block;
+    margin-top: auto;
+    width: 130px;
+    height: 45px;
+    border: solid 1px var(--Yellow);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.086);
+    color: var(--Yellow);
+    font-size:large;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    text-align: center;
+    line-height: 45px;
+    
+}
+
+.bouton-1:hover{
+    background-color: #292a2b;
+    color: var(--Yellow);
+}
+
+#Carte{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("./assets/images/background.webp");
+    background-color: rgba(0, 0, 0, 0.30); 
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: var(--Yellow);
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
+
+
+.description-type{
+    padding: 5px 8px;
+    background: rgba(0, 0, 0, 0.300);
+    box-shadow: 0 12px 32px 0 rgba(3, 4, 14, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 10px;
+}
+
+.zone-titre-description{
+    margin: 50px 0px 20px 0px;
+    align-self: flex-start;
+    color: var(--White);
+    h3{
+        margin-left: 30px;
+        margin-bottom: 10px;
+    }
+    p{
+        margin-left: 50px;
+    }
+}
+
+.span-couleur{
+    color: var(--Yellow);
+}
+
+.zone-description-produit{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    gap: 15px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+/* spécifique 2 produits (modif grid-template-rows:1; */
+.zone-description-entrees{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+}
+
+.type-plat{
+    margin-top: 25px;
+    color: var(--Yellow);
+
+}
+
+.produit-card,.produit-card-boisson-1,.produit-card-boisson-2,.produit-card-small,.produit-card-small-1,.produit-card-small-2{
+    background: rgba(0, 0, 0, 0.671);
+    box-shadow: 0 12px 32px 0 rgba(3, 4, 14, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 3px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.produit-card{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 5fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 2;
+        text-align: center;
+        margin-top: 12px;
+    }
+    img{
+        grid-row: 1/span
+        2;
+        grid-column: 1;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+
+.zone-description-produit-small{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    gap: 15px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+#zone-description-produit-supplement{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#zone-description-produit-supplement > *:first-child {
+    justify-self: start; /* Premiere card à gauche */
+}
+
+#zone-description-produit-supplement > *:last-child {
+    justify-self: end; /* Derniere card à droite */
+}
+.produit-card-small{
+    width: 100%;
+    height: 150px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 5fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 2;
+        text-align: center;
+        margin-top: 12px;
+    }
+    img{
+        grid-row: 1/span
+        2;
+        grid-column: 1;
+        width: 80%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+.produit-card-small-1{
+    grid-row: 1;
+    grid-column: 1;
+    width: 95%;
+    height: 155px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 1 /span 3;
+        text-align:start;
+        margin: auto;
+    }
+    img{
+        grid-row: 2;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+.produit-card-small-2{
+    grid-row: 1;
+    grid-column: 2;
+    width: 95%;
+    height: 155px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 1 /span 3;
+        text-align:start;
+        margin: auto;
+    }
+    img{
+        grid-row: 2;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+
+
+.zone-description-produit-boissons{
+    width: 90%;
+    margin-bottom: 100px;
+    height: auto;
+    text-align: center;
+    gap: 15px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.zone-description-produit-boissons-1{
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.zone-description-produit-boissons-1 > *:first-child {
+    justify-self: start; /* Premiere card à gauche */
+}
+
+.zone-description-produit-boissons-1 > *:last-child {
+    justify-self: end; /* Derniere card à droite */
+}
+
+.zone-description-produit-boissons-2{
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.zone-description-produit-boissons-2 > *:first-child {
+    justify-self: start; /* Premiere card à gauche */
+}
+
+.zone-description-produit-boissons-2 > *:last-child {
+    justify-self: end; /* Derniere card à droite */
+}
+
+
+.produit-card-boisson-1{
+    grid-row: 1;
+    grid-column: 1;
+    width: 95%;
+    height: 155px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 1 /span 3;
+    }
+    img{
+        grid-row: 2;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+.produit-card-boisson-2{
+    grid-row: 1;
+    grid-column: 2;
+    width: 95%;
+    height: 155px;
+    border-radius: 20px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 2fr 1fr 1fr;
+    h4{
+        grid-row: 1;
+        grid-column: 1 /span 3;
+        text-align:start;
+        margin: auto;
+    }
+    img{
+        grid-row: 2;
+        grid-column: 1;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .description-produit{
+        grid-row: 2;
+        grid-column: 2;
+        text-align: center;
+    }
+    .prix-produit{
+        grid-row: 2;
+        grid-column: 3;
+        color: var(--Yellow);
+    }
+}
+
+
+/* Section À propos */
+
+#A-propos{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/images/bg-apropos3.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        width: 380px;
+        height: 380px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    h2{
+        padding-top: 10px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: var(--Yellow);
+        font-size: 1.8em;
+        text-align: center;
+    }
+}
+
+.argument-1,.argument-2{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 50px;
+}
+
+.div-paragraphe{
+    width: 100%;
+    height: 380px;
+    background: rgba( 0, 0, 0, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(110, 114, 174, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px; 
+    border: 1px solid rgba(229, 229, 229, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: 1.2em;
+        width: 90%;
+    }
+}
+
+
+.argument-CTA{
+    width: 90%;
+    height: auto;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#paragraphe-CTA{
+    display: flex;
+    flex-direction: column;
+}
+
+#div-CTA{
+    margin: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+/* Avis SECTION Avis SECTION Avis SECTION Avis SECTION */
+
+
+#Avis{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/images/background-avis.webp);
+    background-color: rgba(0, 0, 0, 0.2);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    display: flex;
+    justify-content: center;
+}
+
+.Caroussel-Avis{
+    position: absolute;
+    width: 50%;
+    top: 40%;
+    left: 43%;
+    height: 250px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
+    text-align: center;
+    /* background-color: rgba(0, 0, 0, 0.671); */
+    border-radius: 20px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+
+
+.Bouton-Gauche-Avis{
+    width: 60px;
+    margin-left: auto;
+    margin-right: 8px;
+    cursor: pointer;
+    grid-column: 1;
+    grid-row: 2;
+}
+.Bouton-Droite-Avis{
+    width: 60px;
+    margin-right: auto;
+    margin-left: 8px;
+    cursor: pointer;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.Note{
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    display: none;
+    /* transform: translateX(30px); Décalé initialement */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    
+}
+.Message-avis{
+    grid-column: 2;
+    grid-row: 2;
+    display: none;
+}
+.Nom-avis{
+    grid-column: 2;
+    grid-row: 3;
+    font-style: italic;
+    display: none;
+}
+
+/* Afficher les éléments actifs */
+.Note.active,
+.Message-avis.active,
+.Nom-avis.active,.indicateur.active {
+    display: block;
+    opacity: 1;
+}
+
+#Avis-titre{
+    margin-top: 5px;
+    padding-top: 10px;
+    margin-bottom: 50px;
+    color: var(--Yellow);
+    font-size: 1.8em;
+    text-align: center;
+
+}
+
+.Bouton-Gauche-Avis,.Bouton-Droite-Avis {
+    background: none;
+    border: none;
+    padding: 5px;
+}
+
+.indicateurs{
+    grid-column:2;
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.indicateur {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128, 0.541);
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicateur.active {
+    background-color: var(--Yellow);
+}
+
+
+
+/* SECTION Contact SECTION Contact */
+
+#Contact{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/images/bg-contact.webp);
+    background-color: #292a2b76;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode:darken;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#titre-restaurant{
+    align-self: flex-start;
+    margin-left: 100px;
+    margin:25px 0px 25px 100px;
+}
+
+#contact-elements{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 15px;
+}
+
+#map {
+width: 500px;
+height: auto;
+border-radius: 10px;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+
+#Contact-liste{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+footer{
+    width: 100%;
+    height: 220px;
+    background-color: #292a2b;
+}
+
+
+/*footer */
+
+footer{
+    position: relative;
+}
+
+
+/* RESPONSIVE */
+
+
+@media screen and  (max-width: 768px) {
+
+    nav{
+        width: 450px;
+    }
+    
+
+
+    .zone-description-produit{
+        width: 90%;
+        height: auto;
+        text-align: center;
+        gap: 15px 30px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+        /* spécifique 2 produits (modif grid-template-rows:1; */
+    .zone-description-entrees{
+        width: 90%;
+        height: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap:30px;
+    }
+        /* Accompagnement et supplément*/
+        .zone-description-produit-small{
+            width: 95%;
+            height: auto;
+            text-align: center;
+            gap: 15px 30px;
+            display: grid;
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 1fr;
+        }
+
+    .produit-card-small{
+        width: 100%;
+        height: 150px;
+        border-radius: 20px;
+        background-color: rgba(0, 0, 0, 0.671);
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-rows: 1fr 5fr;
+        grid-template-columns: 2fr 5fr 1fr;
+        h4{
+            grid-row: 1;
+            grid-column: 2;
+            text-align: center;
+            margin: 15px;
+        }
+        img{
+            grid-row: 1/span
+            2;
+            grid-column: 1;
+            width: 80%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .description-produit{
+            grid-row: 2;
+            grid-column: 2;
+            text-align: center;
+        }
+        .prix-produit{
+            grid-row: 2;
+            grid-column: 3;
+            color: var(--Yellow);
+        }
+    }
+
+}
+
+
+
+
+
+
+@media screen and  (max-width: 468px) {
+
+    /* En-tête */
+
+    #en-tete{
+        font-size: 12px;
+    }
+
+    /* Nav */
+    nav{
+        width: 350px;
+        a{
+            text-wrap: nowrap;
+        }
+    }
+
+    /* Carte */
+
+    .zone-description-produit{
+        width: 100%;
+    }
+
+    .produit-card{
+        height: 165px;
+        grid-template-columns: 3fr 4fr 1fr;
+    }
+
+    .zone-description-entrees{
+        width: 100%;
+    }
+
+    .zone-description-produit-small{
+        width: 100%;
+    }
+    .produit-card-small-1,.produit-card-small-2{
+        p{
+            font-size: 12px;
+        }
+        
+        img{
+            width: 60px;
+            height: 60px
+        }
+    }
+
+    /* Boissons */
+
+    .zone-description-produit-boissons{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .produit-card-boisson-1,.produit-card-boisson-2{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+
+    .argument-1,.argument-CTA{
+        flex-direction: column;
+    }
+    .argument-2{
+        flex-direction: column-reverse;
+    }
+    .argument-1,.argument-2,.argument-CTA{
+        width: 95%;
+        img{
+            width:95% !important;
+            height: 250px !important;
+            border-radius: 10px !important;
+        }
+    }
+    .div-paragraphe{
+        box-shadow: none;
+    }
+
+    /* Section AVIS */
+
+
+
+
+    @media (max-width: 468px) {
+        #Avis {
+            display: flex; /* Utilise flexbox pour centrer le contenu */
+            justify-content: center; /* Centre horizontalement */
+            height: auto; /* Ajuste la hauteur pour éviter les coupures */
+            min-height: 100vh; /* Assure que la section prend au moins toute la hauteur */
+            padding: 20px; /* Ajoute un padding pour éviter que le contenu touche les bords */
+        }
+    
+        #Caroussel-Avis {
+            top:55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 95%; /* Réduit la largeur pour mieux s'adapter aux petits écrans */
+            max-width: 400px; /* Limite la largeur maximale du carrousel */
+            height: auto; /* Permet à la hauteur de s'adapter au contenu */
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto 1fr auto; /* Conserve la structure de grille */
+            grid-template-rows: auto 1fr auto;
+            gap: 10px; /* Ajoute un espacement entre les éléments de la grille */
+            text-align: center;
+            border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px; /* Ajoute un padding autour du contenu */
+        }
+    
+        #Bouton-Gauche-Avis,
+        #Bouton-Droite-Avis {
+            width: 40px; /* Réduit la taille des boutons pour mieux s'adapter aux petits écrans */
+            margin: 0;
+            padding: 5px;
+        }
+    
+        #Note {
+            gap: 5px; /* Réduit l'espacement entre les icônes de notation */
+        }
+    
+        #Avis-titre {
+            font-size: 1.5em; /* Réduit la taille de la police du titre */
+            margin-bottom: 20px;
+        }
+    
+        #Message-avis {
+            font-size: 0.9em; /* Adapte la taille de police du texte de l'avis */
+            padding: 10px;
+        }
+    
+        #Nom-avis {
+            font-size: 0.8em; /* Réduit légèrement la taille du nom pour s'adapter */
+            margin-bottom: 10px;
+        }
+    }
+    
+
+
+    #titre-restaurant{
+        align-self: flex-start;
+        margin: 15px 0px;
+    }
+    #map{
+        text-align: center;
+        width: 90%;
+    }
+    #contact-elements{
+        flex-direction: column;
+    }
+    #Contact-liste{
+        width: 95%;
+        align-self: center;
+        gap: 10px;
+    }
+}
